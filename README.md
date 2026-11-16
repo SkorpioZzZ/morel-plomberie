@@ -28,6 +28,7 @@ Un artisan a besoin d'un site qui fait sonner son téléphone. Tout le site va d
 
 - HTML, CSS et JavaScript, sans framework ni étape de build
 - Polices système et icônes SVG intégrées : aucune requête externe
+- Photos en WebP redimensionnées (15 à 40 Ko chacune), chargement différé hors du haut de page
 - Responsive, conçu d'abord pour le mobile
 - Accessibilité : lien d'évitement, navigation au clavier, attributs ARIA sur le menu et le formulaire, messages d'erreur liés aux champs
 - Référencement local : balises `title` et `description` par page, données structurées Schema.org (`Plumber`)
@@ -64,9 +65,12 @@ Le site peut être hébergé tel quel sur n'importe quel hébergement statique (
 ├── mentions-legales.html
 ├── css/
 │   └── style.css
+├── img/          photos (WebP)
 └── js/
     └── main.js
 ```
+
+Les photos sont libres de droits. Sur un vrai site client, elles seraient remplacées par les photos des chantiers de l'artisan.
 
 ## Auteur
 
