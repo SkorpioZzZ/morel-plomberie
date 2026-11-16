@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zone d'intervention et devis gratuit | Morel Plomberie</title>
+  <meta name="description" content="Plombier à Paris (75), 92, 93 et 94. Demandez votre devis gratuit en ligne, réponse sous 24 h.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2313233a'/%3E%3Cpath d='M16 6c4 5 7 8.5 7 12a7 7 0 0 1-14 0c0-3.5 3-7 7-12z' fill='%23c4622d'/%3E%3C/svg%3E">
+
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <p class="demo-banner">Site de démonstration réalisé par Alexandre Zapolski. Morel Plomberie est une entreprise fictive.</p>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html" aria-label="Morel Plomberie, accueil">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#13233a"/><path d="M16 6c4 5 7 8.5 7 12a7 7 0 0 1-14 0c0-3.5 3-7 7-12z" fill="#c4622d"/></svg>
+        <span>Morel Plomberie<small>Plombier-chauffagiste</small></span>
+      </a>
+
+      <nav class="nav" id="menu" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="prestations.html">Prestations</a></li>
+          <li><a href="devis.html" aria-current="page">Devis</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--primary btn--small header__phone" href="tel:+33199001234">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        01 99 00 12 34
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="visually-hidden">Ouvrir le menu</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="page-head">
+      <div class="container">
+        <span class="eyebrow">Devis gratuit</span>
+        <h1>Demandez votre devis, réponse sous 24h</h1>
+        <p>Nous intervenons dans Paris intra-muros et dans les trois départements limitrophes. Pour une urgence, appelez directement.</p>
+      </div>
+    </section>
+
+    <!-- zone -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Zone d'intervention</h2>
+          <p>Déplacement inclus dans toute la zone. En urgence, on arrive en 2h environ à Paris et en 2h30 en petite couronne.</p>
+        </div>
+        <div class="zones">
+          <div class="card zone">
+            <h3>Paris <span>75</span></h3>
+            <p>Les 20 arrondissements.</p>
+          </div>
+          <div class="card zone">
+            <h3>Hauts-de-Seine <span>92</span></h3>
+            <p>Boulogne-Billancourt, Issy-les-Moulineaux, Neuilly, Levallois, Clichy, Montrouge, Nanterre et les communes voisines.</p>
+          </div>
+          <div class="card zone">
+            <h3>Seine-Saint-Denis <span>93</span></h3>
+            <p>Montreuil, Saint-Denis, Pantin, Bagnolet, Les Lilas, Aubervilliers, Romainville et les communes voisines.</p>
+          </div>
+          <div class="card zone">
+            <h3>Val-de-Marne <span>94</span></h3>
+            <p>Vincennes, Saint-Mandé, Ivry-sur-Seine, Charenton, Créteil, Vitry-sur-Seine et les communes voisines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- formulaire -->
+    <section class="section section--sand" id="devis">
+      <div class="container quote-layout">
+        <div class="card">
+          <h2>Demande de devis</h2>
+          <p style="color:var(--muted)">Les champs marqués <span class="req">*</span> sont obligatoires.</p>
+
+          <!-- action vide = mode démo, voir main.js -->
+          <form id="quote-form" class="form" action="" method="post" novalidate>
+            <div class="field">
+              <label for="name">Nom <span class="req">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+
+            <div class="field">
+              <label for="phone">Téléphone <span class="req">*</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" autocomplete="email">
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+
+            <div class="field">
+              <label for="postcode">Code postal <span class="req">*</span></label>
+              <input id="postcode" name="postcode" type="text" inputmode="numeric" maxlength="5" autocomplete="postal-code" required>
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+
+            <div class="field field--full">
+              <label for="service">Type d'intervention <span class="req">*</span></label>
+              <select id="service" name="service" required>
+                <option value="">Choisir</option>
+                <option>Dépannage / fuite</option>
+                <option>Chauffe-eau</option>
+                <option>Chauffage / chaudière</option>
+                <option>Salle de bain</option>
+                <option>Autre</option>
+              </select>
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+
+            <fieldset class="field field--full">
+              <legend>Délai souhaité</legend>
+              <div class="radios">
+                <label><input type="radio" name="delay" value="urgent"> Urgent (48h)</label>
+                <label><input type="radio" name="delay" value="semaine" checked> Dans la semaine</label>
+                <label><input type="radio" name="delay" value="flexible"> Pas pressé</label>
+              </div>
+            </fieldset>
+
+            <div class="field field--full">
+              <label for="message">Votre besoin <span class="req">*</span></label>
+              <textarea id="message" name="message" required placeholder="Ex. : le ballon d'eau chaude fuit par le bas, modèle 200 L de 2012"></textarea>
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+
+            <!-- honeypot anti-spam -->
+            <div class="hp" aria-hidden="true">
+              <label for="website">Ne pas remplir</label>
+              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="field field--full">
+              <label class="consent">
+                <input type="checkbox" name="consent" required>
+                <span>J'accepte que mes données soient utilisées pour traiter ma demande de devis. Elles ne sont ni revendues ni utilisées à d'autres fins (<a href="mentions-legales.html#donnees">en savoir plus</a>). <span class="req">*</span></span>
+              </label>
+              <span class="field__error" aria-live="polite"></span>
+            </div>
+
+            <div class="field field--full">
+              <button class="btn btn--primary" type="submit">Envoyer ma demande</button>
+            </div>
+
+            <p class="form-status" role="status"></p>
+          </form>
+        </div>
+
+        <aside>
+          <div class="aside-box">
+            <h2 style="font-size:1.2rem;margin:0">Une urgence ?</h2>
+            <a class="phone-big" href="tel:+33199001234">01 99 00 12 34</a>
+            <p style="margin:0;color:var(--muted)">Pour une fuite, un dégât des eaux ou plus d'eau chaude, appelez directement, ce sera plus rapide.</p>
+          </div>
+          <div class="aside-box">
+            <h2 style="font-size:1.2rem">Horaires</h2>
+            <ul class="hours">
+              <li><span>Lundi au vendredi</span><span>8h à 19h</span></li>
+              <li><span>Samedi</span><span>9h à 13h</span></li>
+              <li><span>Urgences</span><span>7j/7</span></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="logo" href="index.html">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1d3352"/><path d="M16 6c4 5 7 8.5 7 12a7 7 0 0 1-14 0c0-3.5 3-7 7-12z" fill="#c4622d"/></svg>
+            <span>Morel Plomberie<small>Plombier-chauffagiste</small></span>
+          </a>
+          <p>Dépannage, chauffage et salle de bain à Paris et en petite couronne.</p>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="tel:+33199001234">01 99 00 12 34</a></li>
+            <li>Du lundi au vendredi de 8h à 19h</li>
+            <li>Samedi de 9h à 13h</li>
+            <li>Urgences 7j/7</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Pages</h2>
+          <ul>
+            <li><a href="prestations.html">Prestations</a></li>
+            <li><a href="devis.html">Zone d'intervention et devis</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Morel Plomberie, entreprise fictive</span>
+        <span>Site réalisé par <a href="https://www.malt.fr/profile/alexandrezapolski">Alexandre Zapolski</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- barre d'appel mobile -->
+  <div class="callbar">
+    <a class="btn btn--primary" href="tel:+33199001234">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      Appeler
+    </a>
+    <a class="btn btn--outline" href="devis.html">Devis gratuit</a>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
